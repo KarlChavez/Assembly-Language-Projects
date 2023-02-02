@@ -1,0 +1,81 @@
+Name: Karl Chavez
+
+I certify that I completed all of the work myself with no aid from anyone aside from the instructor or the undergraduate graders.
+
+Part 1&2:
+
+Q1: 
+
+Instructions: 
+While testing my lab, I reccommend that for part1 and part2, I have made individual .s files for each part that you should edit and run. It will be a lot easier to find the editable section for part1 if you look at part1.s. Same goes with part2. Part3.s has all of the parts combined and it's harder to find the editable section just because there's more code to look through. 
+
+Run makefile and type "part1" to test part1 and "part2" to test part2. 
+
+Q2:
+
+It is the same editable section for both parts 1 and 2. There are only two portions of code where there are editable sections. 
+
+Code:
+
+1:
+
+### Grader Editable Section     ### 
+### Section Starts Here         ###
+
+### UPDATE
+### Add/remove strings as needed 
+s1:
+        .string "I'm big fan of small word. No like big word or good grammar. Grammar too hard."
+s2:
+        .string "I really hate how nice the weather is getting."
+s3:
+        .string "What"
+s4:
+        .string "Amazing, isn't? With just the slightest touch the material warps around the skin effortlessly."
+s5:
+        .string "Can you believe how much ligma is going around this year?"
+
+### Grader Editable Section     ###
+### Section Ends Here           ###
+
+2:
+
+### Grader Editable Section     ### 
+### Section Starts Here         ###
+
+### UPDATE
+### Add/remove statements as needed 
+### Pushes the addresses of strings onto the stack
+pushq $s1
+pushq $s2
+pushq $s3
+pushq $s4
+pushq $s5
+
+### UPDATE
+### Move the number of string addresses into num
+movq $5, num
+
+### Grader Editable Section     ###
+### Section Ends Here           ###
+ 
+Part 3:
+
+Important: The size of "long" data type is 8 bytes big.
+
+char: 1
+short: 2
+int: 4
+float: 4
+double: 8
+long: 8
+
+The output should look like:
+
+The stucture's alignment is X bytes.
+
+#Goes through all the arguments#
+
+The total space structure takes X bytes.
+
+
