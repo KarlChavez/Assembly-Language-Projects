@@ -1,0 +1,31 @@
+Name: Karl Chavez
+
+I certify that I completed all of the work myself with no aid from anyone else aside from the instructor or the undergraduate graders.
+
+Part 1:
+
+Q1: I can't understand my code at all. The lines aren't in order and it's hard to track how each line is supposed to operate.
+
+Q2: It's very crucial to have sufficiently readable code because it saves time for YOU when you go back to work on your code after a break. You can save yourselves hours of debugging and trying to remember what you wrote. Writing comments is the #1 skill that all programmers should know when first learning how to code.
+
+Q3: One difference is that for lab2, I had two different arrays: one to hold the original values and one for copy. However, I didn't need to create two arrays for this lab because I can store the values into a stack. The stack eliminated numerous variables that I would otherwise use if I did this lab in C. In this lab, I had to be more careful about how many variables I used. However, I didn't care about how many variables I used during lab 2. Furthermore, I had to keep track what the registers contained. As for the variables in lab2, I didn't pay attention to what each variable held because I had many variables with names that told me its functionality. 
+
+Q4: I created a function for both encode and decode. This is essential because if you do everything in main, it's a lot harder to spot where the error is coming from and it's visually easier to read code that is divided into functions instead of having a huge chunk of code in main. In both of my functions, I only needed to past one parameter which is the array that holds 8 characters. The register that can hold the 1st parameter is%rdi which is the register I used to hold my array to pass it to my functions encode and decode. Functions encode and decode were the only functions I used to help with my encryption scheme.
+
+Q5: My output and inputs are the same as what I did for Lab2!
+
+Q6: I think it's more natural to manipulate bits in Assembly Language than in C. One reason being is that we as coders have more control over the flow of bits. Meaning, we have more control of what our program actually does. In Assmebly Language, we can use gdb and tui reg general to see each and ever register and what value is stored with each line! You can't do that in C. Debugging in Assembly language is much easier than in C because you can see everything what's going on with your registers and how their values are changing. As for C, its a little bit more abstract than Assembly language so it's hard to know the inner workings with each line.
+
+Part 2:
+
+Q1: It works. The real question is why wouldn't it work. The source file ".s" (the file type that we are using to type assembly language) is just the step after the source file ".c". If gdb works on ".s", then it should also work on ".c" because it's very "similar" in that it's just the step downwards. Running gdb in assembly language is similar to running gdb in our ".c" files. 
+
+Q2: It works!
+
+Q3: I see all the 17 registers including %rip and I can see the contents each register is holding. 
+
+Q4: When we run gdb, we are able to see line-by-line what values each register is holding. This is SUPERIOR when it comes to debugging. We are able to know which register has what value. I used this a lot throughout this lab. Especially when I am calling numerous functions. I can see that everytime I call a function like printf, all the caller registers change values but the calle registers stay the same. This is super important when you have multiple functions.
+
+Q5: From what I can tell, other commands for gdb still work while we're on this screen. This makes using tui reg general superior when you are coding in assembly. We don't have to spend hours trying to figure out what values are on each register. This makes life so much easier when it comes to finding that one register that is causing all the errors! 
+
+ 
